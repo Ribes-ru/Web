@@ -14,6 +14,10 @@
     font-family: 'Open sans';
     src: url(fonts/Open_Sans/static/OpenSans-Medium.ttf);
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -22,7 +26,6 @@ body{
     background-color: #d9d9d9;
     justify-content: center;
     font-family: sans-serif;
-    margin: -8px 0px;
 }
 .Page{
     display: flex;
@@ -30,7 +33,6 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #d9d9d9;
-    margin: -8px 0px;
     width: 50vw;
 }
 .Heading{
@@ -42,11 +44,14 @@ body{
     height: 120px;
 }
 #Title{
-    font-size: 2vw;
+    font-size: 40px;
     margin: 30px 0px 20px 80px;
     color: #092A42;
 }
 #QuickContacts{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
     margin: 30px 50px 30px 0px;
     color: #660000;
 }
@@ -72,7 +77,7 @@ hr {
     align-self: flex-start;
     margin: 50px;
     background-color: grey;
-    width: 50%;
+    width: 60%;
     height: auto;
     border-radius: 10px;
 }
@@ -99,6 +104,80 @@ hr {
 a.nav-link {
     color: black;
     text-decoration: none;
-    padding: 15px;
+    padding: 16px;
     margin: 0px 15px;
+}
+a.nav-link:hover {
+    background-color: rgb(200, 200, 200);
+}
+@media only screen and (max-width: 1700px) {
+    .Page {
+        width: 55vw;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .Page {
+        width: 65vw;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .Page {
+        width: 75vw;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .Page {
+        width: 100vw;
+    }
+     .Section {
+        margin: 5%;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #Title {
+        font-size: 4vw;
+    }
+    .QuickSection {
+        display: none;
+    }
+    .Section {
+        width: 90%;
+    }
+    .Heading {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #Title {
+        margin: 30px 30px 10px;
+    }
+    #QuickContacts {
+        flex-direction: row;
+        margin: 5px;
+    }
+    #QuickContacts > a {
+        margin: 5px 20px;
+    }
+    #hr1 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #Title {
+        font-size: 7vw;
+    }
+    #QuickContacts {
+        margin: 0px;
+    }
+    .Heading {
+        margin: 0px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #Title {
+        font-size: 9vw;
+        margin: 20px 0px;
+    }
+
 }
