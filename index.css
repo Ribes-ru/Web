@@ -1,18 +1,10 @@
 @font-face {
-    font-family: 'PTSans';
-    src: url(fonts/PTSans/PTSans-Regular.ttf);
-}
-@font-face {
-    font-family: 'Inter';
-    src: url(fonts/Inter/static/Inter-SemiBold.ttf);
-}
-@font-face {
-    font-family: 'Noto sans';
-    src: url(fonts/Noto_Sans/NotoSans-Regular.ttf);
+    font-family: 'Medium';
+    src: url(fonts/Open_Sans/static/OpenSans-Medium.ttf);
 }
 @font-face {
     font-family: 'Open sans';
-    src: url(fonts/Open_Sans/static/OpenSans-Medium.ttf);
+    src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
 * {
     margin: 0px;
@@ -20,12 +12,12 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: Open sans;
 }
 body{
     display: flex;
     background-color: #d9d9d9;
     justify-content: center;
-    font-family: sans-serif;
 }
 .Page{
     display: flex;
