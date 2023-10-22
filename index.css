@@ -96,11 +96,19 @@ hr {
 a.nav-link {
     color: black;
     text-decoration: none;
-    padding: 16px;
-    margin: 0px 15px;
+    padding: 14px 30px;
 }
 a.nav-link:hover {
     background-color: rgb(200, 200, 200);
+}
+.QuickSection > button {
+    display: none;
+    border: 0px;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    font-size: 24px;
+    width: 90px;
+    height: 40px;
 }
 @media only screen and (max-width: 1700px) {
     .Page {
@@ -130,9 +138,6 @@ a.nav-link:hover {
     #Title {
         font-size: 4vw;
     }
-    .QuickSection {
-        display: none;
-    }
     .Section {
         width: 90%;
     }
@@ -150,8 +155,13 @@ a.nav-link:hover {
     #QuickContacts > a {
         margin: 5px 20px;
     }
-    #hr1 {
-        display: none;
+    .QuickSection {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #Title {
+        font-size: 5.5vw;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -166,10 +176,23 @@ a.nav-link:hover {
         height: auto;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 470px) {
     #Title {
         font-size: 9vw;
         margin: 20px 0px;
     }
-
+    .QuickSection {
+        flex-direction: column;
+        height: auto;
+    }
+    .dropdown {
+        display: none;
+        flex-direction: column;
+    }
+    .QuickSection button {
+        display: block;
+    }
+    .QuickSection button:hover {
+        background-color: rgb(200, 200, 200);
+    }
 }
